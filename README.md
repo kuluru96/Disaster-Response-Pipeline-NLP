@@ -37,14 +37,10 @@ This project is divided in the following key sections:
 
 1. **ETL Preparation Notebook**: This Jupyter Notebook contains the implemented ETL pipeline and database creation
 2. **ML Pipeline Preparation Notebook**: This notebook houses the Machine Learning Pipeline developed with NLTK and Scikit-Learn
-
-**app/templates/***: html files for web app
-
-**data/process_data.py**: Extract Train Load (ETL) pipeline used for data cleaning, feature extraction, and storing data in a SQLite database
-
-**models/train_classifier.py**: A machine learning pipeline that loads data, trains a model, and saves the trained model as a .pkl file for later use
-
-**run.py**: Flask web app used to classify disaster messages
+3. **app/templates/***: html files for web app
+4. **data/process_data.py**: Extract Train Load (ETL) pipeline used for data cleaning, feature extraction, and storing data in a SQLite database
+5. **models/train_classifier.py**: A machine learning pipeline that loads data, trains a model, and saves the trained model as a .pkl file for later use
+6. **run.py**: Flask web app used to classify disaster messages
 
 ## Acknowledgements
 
