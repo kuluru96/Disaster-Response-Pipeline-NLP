@@ -43,6 +43,7 @@ def load_data(database_filepath):
     engine = create_engine('sqlite:///' + database_filepath)
     table_name = os.path.basename(database_filepath).replace(".db","") + "_table"
     df = pd.read_sql_table(table_name,engine)
+    df['related']=df['related'].map(lambda x: 1 if x == 2 else x)
     X = df['message']
     Y = df.iloc[:, 4:]
     category_names = Y.columns
